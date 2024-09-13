@@ -74,9 +74,13 @@
 ## 5. Result
 
 ### Leader Board
+#### 중간성적 2위🥈 : RMSE: 	15042.1302
+![Leaderboard(mid)](https://github.com/user-attachments/assets/5b876442-6ea9-46de-b964-6620209ddd4e)
 
-- _Insert Leader Board Capture_
-- _Write rank and score_
+
+#### 최종성적 3위🥉 - RMSE: 12518.1396
+![Leaderboard(final)](https://github.com/user-attachments/assets/dc81980c-ff28-4142-bdc0-424c11e9b2b0)
+
 
 ### Presentation
 
