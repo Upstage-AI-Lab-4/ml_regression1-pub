@@ -17,33 +17,34 @@
 
 ### Overview
 
-- _Write competition information_
+- 서울시 아파트 실거래가 매매 데이터를 기반으로 아파트 가격을 예측하는 대회
 
 ### Timeline
 
-- ex) January 10, 2024 - Start Date
-- ex) February 10, 2024 - Final submission deadline
+- September 2, 2024 - Start Date
+- September 13, 2024 - Final submission deadline
 
 ## 2. Components
 
 ### Directory
 
-- _Insert your directory structure_
-
-e.g.
 ```
 ├── code
-│   ├── jupyter_notebooks
-│   │   └── model_train.ipynb
-│   └── train.py
-├── docs
-│   ├── pdf
-│   │   └── (Template) [패스트캠퍼스] Upstage AI Lab 1기_그룹 스터디 .pptx
-│   └── paper
-└── input
-    └── data
-        ├── eval
-        └── train
+│   ├── baseline_code.ipynb
+│   ├── last_code.ipynb
+│   └── requirements.txt
+├── data
+│   ├── budongsan_simli.csv
+│   ├── bus_feature.csv
+│   ├── elementary_XY.csv
+│   ├── koreanbank_rate.csv
+│   ├── park.csv
+│   ├── rebuilding.csv
+│   ├── subway_feature.csv
+│   ├── test.csv
+│   └── xy_pos.csv
+└── outputs
+    └── output_name.csv
 ```
 
 ## 3. Data descrption
