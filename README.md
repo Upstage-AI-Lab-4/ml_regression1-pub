@@ -8,10 +8,20 @@
 
 ## 0. Overview
 ### Environment
-- _Write Development environment_
+- AI Stages Server From Upstage
+- Python 3.10.13
+
 
 ### Requirements
-- _Write Requirements_
+- matplotlib==3.7.1
+- numpy==1.23.5
+- pandas==1.5.3
+- scipy==1.11.3
+- seaborn==0.12.2
+- scikit-learn==1.2.2
+- statsmodels==0.14.0
+- tqdm==4.66.1
+
 
 ## 1. Competiton Info
 
@@ -33,16 +43,16 @@
 │   ├── baseline_code.ipynb
 │   ├── last_code.ipynb
 │   └── requirements.txt
-├── data
-│   ├── budongsan_simli.csv
-│   ├── bus_feature.csv
-│   ├── elementary_XY.csv
-│   ├── koreanbank_rate.csv
-│   ├── park.csv
-│   ├── rebuilding.csv
-│   ├── subway_feature.csv
-│   ├── test.csv
-│   └── xy_pos.csv
+├── data                #train.csv 파일(기본 제공 훈련 데이터)은 용량 문제로 git에 업로드하지 않음
+│   ├── budongsan_simli.csv        
+│   ├── bus_feature.csv            
+│   ├── elementary_XY.csv       
+│   ├── koreanbank_rate.csv       
+│   ├── park.csv                
+│   ├── rebuilding.csv             
+│   ├── subway_feature.csv         
+│   ├── test.csv                   
+│   └── xy_pos.csv                 
 └── outputs
     └── output_name.csv
 ```
@@ -51,7 +61,19 @@
 
 ### Dataset overview
 
-- _Explain using data_
+ ## 기본제공 데이터
+ - train.csv : 훈련 데이터
+ - test.csv : 테스트 데이터
+ - bus_feature.csv : 버스 정류장 정보 데이터
+ - subway_feature.csv : 지하철역 정보 데이터
+
+ ## 추가 데이터
+ - xy_pos.csv : 주소별 위도/경도 매핑 데이터 (경진대회 게시판 6조 권세진님 공유)
+ - budongsan_simli.csv : 월별 부동산 매수 심리 데이터
+ - elementary_XY.csv : 초등학교 정보 및 위치 데이터
+ - koreanbank_rate.csv : 한국은행 월별 기준금리 데이터
+ - park.csv : 서울시 공원 정보 데이터
+ - rebuilding.csv : 재건축단지 정보 데이터
 
 ### EDA
 
@@ -75,22 +97,22 @@
 
 ### Leader Board
 #### 중간성적 2위🥈 : RMSE: 	15042.1302
-![Leaderboard(mid)](https://github.com/user-attachments/assets/5b876442-6ea9-46de-b964-6620209ddd4e)
+![Leaderboard_mid](https://github.com/user-attachments/assets/1e5581c4-19a3-4e53-8b60-f415516fd46d)
 
 
 #### 최종성적 3위🥉 - RMSE: 12518.1396
-![Leaderboard(final)](https://github.com/user-attachments/assets/dc81980c-ff28-4142-bdc0-424c11e9b2b0)
+![Leaderboard_last](https://github.com/user-attachments/assets/76682430-9e23-42ae-bacc-844b0a21d585)
 
 
 ### Presentation
 
-- _Insert your presentaion file(pdf) link_
+- [[패스트캠퍼스] Upstage AI Lab 4기_1팀_발표자료.pdf](https://github.com/user-attachments/files/17038028/Upstage.AI.Lab.4._1._.pdf)
 
 ## etc
 
 ### Meeting Log
 
-- _Insert your meeting log link like Notion or Google Docs_
+- Notion (https://www.notion.so/1-18a3949384af474ea54aa80fd9bfc9c3)
 
 ### Reference
 
