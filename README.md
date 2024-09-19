@@ -87,11 +87,41 @@
 
 ### Model descrition
 
-- _Write model information and why your select this model_
+- RandomForest 기반으로 작성된 베이스라인 모델에서 성능 향상을 목표로 LightGBM 모델로 변경하여 사용.
+- LightGBM 모델 적용 후 RMSE 점수가 향상됨.
+- 대회 중반 이후, XGBoost 및 CatBoost 등 다양한 모델을 테스트했으나, 동일 조건의 테스트 환경에서 RMSE 점수가 LightGBM이 가장 우수한 결과를 보임.
+- 최종적으로 LightGBM 모델을 선정하고, 하이퍼파라미터 튜닝을 진행.
 
 ### Modeling Process
 
-- _Write model train and test process with capture_
+**교차 검증(Cross Validation)**
+- Train 데이터셋과 Valid 데이터셋을 8:2로 구분하여 학습 및 검증을 진행.
+	- 베이스라인 코드에서 사용된 방식을 그대로 사용하여 테스트 진행.
+- 데이터를 5개로 분할하여 각각 Train 및 Test를 진행하는 K-Fold 방식 적용.
+	- 5-Fold 후 전체 모델의 평균값으로 검증.
+	- 5-Fold 후 성능이 우수한 상위 3개의 모델 평균값으로 검증.
+- 데이터를 시계열에 따라 정렬한 후, K개로 분할하여 순차적으로 Train 및 Test 진행.
+	- ‘계약년/월’에 따라 정렬 후 5-Fold 검증 진행.
+- 동일한 조건에서 테스트를 진행했으며, Hold-out 방식이 가장 우수한 성능을 보여 최종적으로 Hold-out 방식으로 진행.
+
+
+**학습 및 평가**
+- Train/Valid로 나눈 학습 데이터에 각각 Scaling 적용
+	- Log Scaling
+	- Robust Scaling
+- LightGBM 모델을 사용하여 Scaling 적용된 데이터로 학습 진행
+	- n_estimators = 10,000
+	- eval_metric = 'rmse'
+- 예측값에 대해 역 Scaling 적용
+- 최종 검증 RMSE를 통해 모델 성능 확인
+	- 모델을 통해 최종 예측한 데이터에서 손실이 발생하는 경우가 종종 있어, output 출력 후 눈으로 직접 확인
+
+<img width="942" alt="image" src="https://github.com/user-attachments/assets/8052a6c1-55cb-4b08-a252-dd76fad468a5">
+
+
+**Feature Importance**
+![image](https://github.com/user-attachments/assets/ab1d3673-c9ab-4c7f-9bdb-f789c92c2b34)
+
 
 ## 5. Result
 
