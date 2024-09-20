@@ -78,10 +78,9 @@
 ### EDA
 
 - 결측치 확인
-![image](https://github.com/user-attachments/assets/3792b829-3510-4820-ba6d-c655fd3f4149)
-
+<img width="1020" alt="스크린샷 2024-09-20 오전 9 28 29" src="https://github.com/user-attachments/assets/31f88693-3876-4b99-b825-feed607a9811">
 - 이상치 확인
-![image](https://github.com/user-attachments/assets/9f0e0ce4-c444-4897-a891-10b9bc512c06)
+<img width="888" alt="스크린샷 2024-09-19 오후 3 37 48" src="https://github.com/user-attachments/assets/db51316d-bb37-4601-b676-12838fbf906d">
 
 
 
