@@ -79,6 +79,7 @@
 
 - 결측치 확인
 <img width="1020" alt="스크린샷 2024-09-20 오전 9 28 29" src="https://github.com/user-attachments/assets/31f88693-3876-4b99-b825-feed607a9811">
+
 - 이상치 확인
 <img width="888" alt="스크린샷 2024-09-19 오후 3 37 48" src="https://github.com/user-attachments/assets/db51316d-bb37-4601-b676-12838fbf906d">
 
