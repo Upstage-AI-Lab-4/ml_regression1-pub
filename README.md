@@ -78,10 +78,10 @@
 ### EDA
 
 - 결측치 확인
-!<img width="1020" src="https://github.com/user-attachments/assets/31f88693-3876-4b99-b825-feed607a9811">![image](https://github.com/user-attachments/assets/3792b829-3510-4820-ba6d-c655fd3f4149)
+![image](https://github.com/user-attachments/assets/3792b829-3510-4820-ba6d-c655fd3f4149)
 
 - 이상치 확인
-!<img width="888" src="https://github.com/user-attachments/assets/db51316d-bb37-4601-b676-12838fbf906d">![image](https://github.com/user-attachments/assets/9f0e0ce4-c444-4897-a891-10b9bc512c06)
+![image](https://github.com/user-attachments/assets/9f0e0ce4-c444-4897-a891-10b9bc512c06)
 
 
 
